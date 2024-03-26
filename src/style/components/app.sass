@@ -1,0 +1,25 @@
+@use '../variables'
+
+#portfolio
+    display: flex
+    flex-wrap: wrap
+    padding: 3rem 
+    gap: 1rem 
+
+    h1
+        width: 100%
+        font-size: 5rem
+        margin-bottom: 4rem
+        background: variables.$gradient
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+@media (max-width: 768px)
+    #portfolio
+        flex-direction: column
+        padding: 2rem 
+
+@media (max-width: 500px)
+    #portfolio
+         padding: 1rem
+         

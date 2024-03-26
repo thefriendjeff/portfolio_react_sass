@@ -1,0 +1,61 @@
+@use '../variables'
+@use '../mixins'
+    
+#main-content
+    background-color: variables.$bg-color
+    flex: 2 1 0
+    border-radius: variables.$container-border-radius
+    padding: 3rem
+    
+    section
+        display: flex
+        flex-direction: column
+
+    h2
+        color: variables.$text-color
+        font-size: 2.2rem
+        margin-bottom: 1.3rem
+        @include mixins.center
+        justify-content: start
+        gap: 1rem
+
+        &::after
+            @include mixins.gradient-border
+            
+    p
+        color: variables.$text-color-secondary
+        margin-bottom: 1rem
+        line-height: 1.4rem
+
+    .container 
+        margin-top: 2rem
+        margin-bottom: 2rem
+
+    .btn_1
+        @include mixins.btn
+        align-self: start
+    
+    .btn_2
+         @include mixins.btn
+         margin-left: 1rem
+        
+
+
+@media screen and (max-width: 768px)
+     #main-content 
+        
+
+@media (max-width: 500px) 
+    #main-content 
+        padding: 1rem 
+
+        h2
+            font-size: 1.5rem
+
+        p
+            font-size: 1rem
+
+        .btn
+            align-self: center
+
+    
