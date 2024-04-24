@@ -2,11 +2,15 @@ import SocialNetworks from './SocialNetworks';
 
 import Avatar from '../img/perfil.jpg';
 
+import Ebac from '../img/ebac_certificate.jpg';
+
 import "../style/components/sidebar.sass";
 
 import InformationContainer from './InformationContainer';
 
 import MeuArquivoPDF from '../assets/dev_resume.pdf';
+
+import MeuCertificadoEBAC from '../assets/ebac.pdf';
 
 const Sidebar = () => {
     return (
@@ -20,6 +24,9 @@ const Sidebar = () => {
             <InformationContainer />
             <a href={MeuArquivoPDF} className="btn"  target="_blank" rel="noopener noreferrer">
                 Download curriculo
+            </a>
+            <a href={MeuCertificadoEBAC} target="_blank" rel="noopener noreferrer">
+                <img id="ebac" src={Ebac} alt="ebac"/>
             </a>
     </aside>
     );

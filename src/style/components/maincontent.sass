@@ -35,11 +35,20 @@
         @include mixins.btn
         align-self: start
     
-    .btn_2
-         @include mixins.btn
-         margin-left: 1rem
-        
+    a
+        color: #fff
+        font-size: 18px
+        font-weight: bold
+        text-decoration: none
+        transition: color 0.3s ease
 
+        &:hover
+            color: #0064fb
+
+.links-container
+    display: flex
+    flex-direction: column
+    padding-right: 20px         
 
 @media screen and (max-width: 1024px)
         
