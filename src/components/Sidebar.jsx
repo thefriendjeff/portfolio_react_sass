@@ -8,7 +8,7 @@ import "../style/components/sidebar.sass";
 
 import InformationContainer from './InformationContainer';
 
-import MeuArquivoPDF from '../assets/dev_resume.pdf';
+import MeuArquivoPDF from '../assets/dev_en.pdf';
 
 import MeuCertificadoEBAC from '../assets/ebac.pdf';
 
@@ -17,13 +17,13 @@ const Sidebar = () => {
         <aside id="sidebar">
             <img src={Avatar} alt="Jeff"/>
            <div>
-            <p className="title">Desenvolvedor</p>
+            <p className="title">Front-end Developer</p>
             <p className="title_2">UX Designer</p>
            </div>
             <SocialNetworks />
             <InformationContainer />
             <a href={MeuArquivoPDF} className="btn"  target="_blank" rel="noopener noreferrer">
-                Download curriculo
+                Download Resume
             </a>
             <a href={MeuCertificadoEBAC} target="_blank" rel="noopener noreferrer">
                 <img id="ebac" src={Ebac} alt="ebac"/>
