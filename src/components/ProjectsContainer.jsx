@@ -10,10 +10,6 @@ const ProjectsContainer = () => {
             </p>
             <div className="links-container">
                 <div>
-                    <a  href="https://less-price.vercel.app/" target="_blank">Landing Page - React</a>
-                    <p>Less Price is the fantasy application that I created for my case study, in this landing page I present the app and the benefits of go down to our comunity.</p>
-                </div>
-                <div>
                     <a  href="https://takslist-react.vercel.app/" target="_blank">Tasklist - REACT</a>
                     <p>In this project, we created a task list that includes several functionalities: creating new categories, adding new tasks, marking tasks as completed, and deleting them. Additionally, we implemented features to filter tasks alphabetically or use the search bar to find a specific task </p>
                 </div>
